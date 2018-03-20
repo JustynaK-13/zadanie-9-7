@@ -115,9 +115,13 @@ setGamePoints();
 function checkScoreTo10() {
     if (player.score == 10) {
         alert('You Win!');
-        
+        gameState = 'ended';
+        setGameElements();
+
     }else if (computer.score == 10) {
         alert('Computer Win!');
+        gameState = 'ended';
+        setGameElements();
     }
 }
 checkScoreTo10();
